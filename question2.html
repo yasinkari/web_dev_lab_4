@@ -1,0 +1,25 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <input type="text" id="userInput" placeholder="Enter a number"> 
+        <button onclick="checkInput()">Check</button>
+        <script>
+            function checkInput(){
+                let userInput = document.getElementById("userInput").value;
+                if(!/^[0-9]+$/.test(userInput)){
+                    alert("Please only enter numeric characters only (Allowed input:0-9)")
+                }
+                else{
+                    if(userInput<10){
+                        alert("The number is lower than 10");
+                    }
+                    else{
+                        alert("The number is higher than 10");
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
